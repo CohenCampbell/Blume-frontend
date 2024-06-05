@@ -1,7 +1,7 @@
 import axios from "axios";
 
 async function backendRequest(endpoint, data = {}, method = "get") {
-  const url = `${process.env.REACT_APP_BACKEND_URL}/${endpoint}`;
+  const url = `${"https://blume-backend.onrender.com"}/${endpoint}`;
   console.log(url);
   let token = sessionStorage.getItem("token")
     ? sessionStorage.getItem("token")
