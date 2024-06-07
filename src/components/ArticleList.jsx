@@ -38,6 +38,8 @@ function ArticleList() {
   }
 
   useEffect(() => {
+    //Sadly newAPI limits requests to localhost only, so I have to hard code the articles for the deployment
+    //The local version of the app works as is should and has a functional search bar
     setArticleArr([
     {
         "source": {
@@ -51,19 +53,6 @@ function ArticleList() {
         "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/06/05/29293575-e0cc-41a3-a7f0-658b601e46e5/thumbnail/1200x630/9287ccb9aba9c36716cb0d4d01801f44/pxl-20240605-2045028982.jpg?v=6d480a252670b63de1e37fef02c977a5",
         "publishedAt": "2024-06-05T22:02:38Z",
         "content": "Hunter Biden's ex-wife Kathleen Buhle and a woman he was later romantically involved with both testified Wednesday in his federal gun trial after his attorney sought to cast doubt on the authenticity… [+9391 chars]"
-    },
-    {
-        "source": {
-            "id": null,
-            "name": "[Removed]"
-        },
-        "author": null,
-        "title": "[Removed]",
-        "description": "[Removed]",
-        "url": "https://removed.com",
-        "urlToImage": null,
-        "publishedAt": "1970-01-01T00:00:00Z",
-        "content": "[Removed]"
     },
     {
         "source": {
